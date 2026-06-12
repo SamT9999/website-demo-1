@@ -1,0 +1,342 @@
+html{
+  height: 100%;
+  flex: 1;
+}
+body{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+.index-body{/* index page body attributes */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  background-size:cover;
+}
+.resume-body {/* resume page body attributes */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  background-size:cover;
+
+}
+.web-skills-body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  background-size:cover;
+}
+.about-body {/* webpage body attributes */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  background-size:cover;
+}
+.infinite-body {/* webpage body attributes */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  background-size:cover;
+}
+
+
+.index-grid {
+  display: grid;
+  grid-template-columns: 1 fr 1 fr;
+  grid-template-areas:/* grid template area assignments */
+  "nav    nav"
+  "header  header"
+  "side1     main"
+  "side2      ."
+  "footer footer";
+
+}
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1 fr 1 fr;
+  grid-template-areas:/* grid template area assignments */
+  "nav    nav"
+  "header  header"
+  "side1    address"
+  "education work-history"
+  "footer footer";
+
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1 fr 1 fr;
+  grid-template-areas:/* grid template area assignments */
+  "nav    nav"
+  "header  header"
+  "about     about"
+  "footer       footer";
+
+}
+.web-skills-grid {
+  display: grid;
+  grid-template-columns: 1 fr 1 fr; /* grid template column assignments */
+  grid-template-areas:  /* grid template area assignments */
+  "nav    nav"
+  "header  header"
+  "side2    side2"
+  ".   webskills-details "
+  "footer footer";
+
+}
+.infinite-grid {
+  display: grid;
+  grid-template-columns: 1 fr 1 fr; /* grid template column assignments */
+  grid-template-areas:  /* grid template area assignments */
+  "nav    nav"
+  "header  header"
+  "signUpButton   signUpButton"
+  "footer   footer ";
+
+}
+
+
+
+header {grid-area: header;} /* grid template keyword assignments */
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+.side1 {grid-area: side1;}
+.side2 {grid-area: side2;}
+.education {grid-area: education;}
+.licences {grid-area: licences;}
+.work-history{grid-area: work-history;}
+.skill-summary{grid-area: skill-summary;}
+.accomplishments{grid-area: accomplishments;}
+.hobbies{grid-area: hobbies;}
+.about{grid-area: about;}
+.address{grid-area: address;}
+.webskills-details{grid-area: webskills-details;}
+.signUpButton{grid-area: signUpButton;}
+
+.topnav { /* top navigator attributes */
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: black ;
+}
+
+.topnav a {/* top navigator attributes */
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover { /* top navigator hover attributes */
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.index-header {/* header attributes */
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+.resume-header{ /* header attributes */
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+.web-skills-header{/* header attributes */
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+.about-header{/* header attributes */
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+.infinite-header{/* header attributes */
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+
+.index-pic{
+  float: left;
+}
+
+.education-details{
+  color: black;
+}
+.work-history-detials{
+  color: black;
+}
+
+
+
+ul { /* list attributes */
+  list-style-type: none;
+}
+li {/* list attributes */
+  list-style-type: none;
+}
+.subheading {/* subheading attributes */
+  font-size: 25px;
+  margin-left: 40px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: black;
+  border: solid color(orange);
+  padding:5px;
+  margin: 10px; 
+}
+.index-subheading {/* subheading attributes */
+  font-size: 25px;
+  margin-left: 40px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: black;
+  padding:5px;
+  margin: 10px; 
+}
+.resume-subheading{ /* subheading attributes */
+  font-size: 40px;
+}
+.webskills-details{ /* web skills details attributes */
+  color: black;
+  font-weight: bold;
+}
+.contact-details a{ /* resume page contact details */
+background-color: black;/* black background */
+border: none; /* Remove default border */
+color: #f2f2f2; /* White text */
+padding: 7px 14px; /* Space inside button */
+text-align: center;
+font-size: 16px;
+border-radius: 8px; /* Rounded corners */
+cursor: pointer; /* Pointer on hover */
+transition: background-color 0.3s, transform 0.2s; /* Smooth effects */
+gap: 10px;
+text-decoration: none;
+}
+.contact-details a:hover{
+background-color: #ddd; /* white on hover */
+color: #000000;
+transform: translateY(-2px); /* Slight lift effect */
+}
+
+.hobbies{
+  margin-left: 40px;
+}
+
+.about-paragraph{ /* about paragraph */
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  -webkit-text-stroke: 0.25px orange; /* Outline thickness and color */
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.side1 a{
+background-color: black;
+border: none; /* Remove default border */
+color: #f2f2f2; /* White text */
+padding: 7px 14px; /* Space inside button */
+text-align: center;
+font-size: 16px;
+border-radius: 8px; /* Rounded corners */
+cursor: pointer; /* Pointer on hover */
+transition: background-color 0.3s, transform 0.2s;
+gap: 10px;
+text-decoration: none;
+}
+
+.side1 a:hover{
+background-color: #ddd; /* white on hover */
+color: #000000;
+transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+.side2 a{
+background-color: black; /* Green background */
+border: none; /* Remove default border */
+color: #f2f2f2; /* White text */
+padding: 7px 14px; /* Space inside button */
+text-align: center;
+font-size: 16px;
+border-radius: 8px; /* Rounded corners */
+cursor: pointer; /* Pointer on hover */
+transition: background-color 0.3s, transform 0.2s;
+gap: 10px;
+text-decoration: none;
+}
+
+.side2 a:hover{
+background-color: #ddd; /* orange on hover */
+color: #000000;
+transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+
+.index-pic{ /* move homepage pic */
+  border: solid;
+  margin-top: 50px;
+  margin-left: 600px;
+}
+
+@media print{ /* get page print ready */
+  body { font-size: 14pt !important; }
+  .index-body{ background-image:none; color:#000000; }
+  .resume-body{ background-image:none; color:#000000; }
+  .web-skills-body{ background-image:none; color:#000000; }
+  .about-body{ background-image:none; color:#000000; }
+  .topnav{ display:none;}
+  .contact-details{
+    display: none;
+  }
+  .side1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF; 
+    background-image:none; 
+    color:#000000;
+    margin-left: auto;
+
+  }
+  .side2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF; 
+    background-image:none; 
+    color:#000000;
+    margin-left: auto;
+  
+  }
+  .index-pic{
+    display: none;
+  }
+  
+}
+.logo{ /* shift logo */
+  float: right;
+}
+
+
+.copyright{ /* copyright */
+margin-top: auto;
+margin-bottom: 20px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}

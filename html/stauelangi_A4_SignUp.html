@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Sam Tauelangi">
+<meta name="description" content="Sign Up page for Sam's portfolio">
+<title>Sign Up</title>
+<link rel="stylesheet" href="../CSS/portfolio.css">
+<link rel="stylesheet" href="../CSS/javascript.css">
+<script src="../JS/stauelangi_A4_SignUp.js"></script>
+</head>
+
+
+
+<body class="index-body" onload="alert('Welcome to Infinite Transport. - Newsletter Signup');">
+<div class="index-grid">
+<nav class="topnav"> <!-- top navigator -->
+  <img class= "logo" src="../images/infinite.jpg" width ="70" height="70" alt="logo">
+  <a href="../html/Index.html">Home</a>
+  <a href="../html/stauelangi_A4_resume.html">Resume</a>
+  <a href="../html/stauelangi_A4_web_skills.html">Web Skills</a>
+  <a href="../html/stauelangi_A4_about.html">About</a>
+  <a href="../html/stauelangi_A4_javascipt.html">Infinite Transport</a>
+</nav>
+<header>
+    <h1 class="index-header">SIGN UP</h1> <!-- header -->
+</header>
+
+
+
+  <form name="signupForm" method="post" action="process.php" onsubmit="return validateForm();">
+    <p class="requiredInfo">Fields marked with an asterisk (<span class="required">*</span>) are required data.</p>
+    <label class="fld" for="firstName">First Name <span class="required">*</span></label>
+    <input type="text" id="firstName" name="firstName" maxlength="60">
+
+    <label class="fld" for="lastName">Last Name <span class="required">*</span></label>
+    <input type="text" id="lastName" name="lastName" maxlength="60">
+
+    <label class="fld" for="email">Email Address</label>
+    <input type="email" id="email" name="email" maxlength="60">
+
+    <fieldset class= "ageRange">
+      <legend>Age Range</legend>
+      <label><input type="radio" name="ageRange" value="15-25"> 15-25</label>
+      <label><input type="radio" name="ageRange" value="26-35"> 26-35</label>
+      <label><input type="radio" name="ageRange" value="36-45"> 36-45</label>
+      <label><input type="radio" name="ageRange" value="46-55"> 46-55</label>
+      <label><input type="radio" name="ageRange" value="55+"> 55+</label>
+    </fieldset>
+
+    <fieldset class= "services">
+      <legend>Services</legend>
+      <label><input type="checkbox" name="services[]" value="Web Development"> Web Development</label>
+      <label><input type="checkbox" name="services[]" value="Cloud Hosting"> Cloud Hosting</label>
+      <label><input type="checkbox" name="services[]" value="Cybersecurity"> Cybersecurity</label>
+      <label><input type="checkbox" name="services[]" value="Data Analytics"> Data Analytics</label>
+      <label><input type="checkbox" name="services[]" value="IT Consulting"> IT Consulting</label>
+    </fieldset>
+
+    <label class="fld" for="comments">Comments</label>
+    <textarea id="comments" name="comments" cols="60" rows="3"></textarea>
+
+    <div class="buttons">
+      <input type="submit" value="Submit" onclick="signUpComplete(this.form)">
+      <input type="reset" value="Reset">
+    </div>
+
+  </form>
+
+<p id="complete"></p>
+
+ 
+</div>
+<footer class="copyright"> 
+  <p>&copy; 2026 Sam Tauelangi. All rights reserved.</p>&nbsp;
+  <address> Contact details: <a href="mailto:support@example.com">samtauelangi@hotmail.com</a> </address>&nbsp;
+  <a href="tel:+61498039873">0498039873</a>&nbsp;
+  <p>All content is my own or used with permission.</p>
+</footer>
+</body>
+</html>

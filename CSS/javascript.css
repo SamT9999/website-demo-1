@@ -1,0 +1,65 @@
+body { 
+font-family: Arial, Helvetica, sans-serif; margin: 20px; }
+
+form { 
+max-width: 600px; margin-right: 150px;}
+
+.required { 
+color: red; }
+
+.fld { 
+display: block; font-weight: bold; margin: 12px 0 4px;}
+
+fieldset { 
+margin: 15px 0; }
+
+fieldset label { 
+display: block; margin: 2px 0; }
+
+.ageRange{
+margin-left: 50px;
+}
+
+.services{
+margin-left: 50px;
+}
+
+.fld{
+margin-left: 50px;
+}
+
+.requiredInfo{
+margin-left: 50px;
+}
+
+#firstName{
+margin-left: 50px;
+}
+
+#lastName{
+margin-left: 50px;
+}
+
+#email{
+margin-left: 50px;
+}
+
+#comments{
+margin-left: 50px;
+}
+
+.buttons{
+margin-top:50px;
+margin-left: 160px;
+transform: scale(1.5);
+}
+
+.signUpButton{
+ padding: 0;
+  margin-top: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+transform: scale(2.0);
+}
